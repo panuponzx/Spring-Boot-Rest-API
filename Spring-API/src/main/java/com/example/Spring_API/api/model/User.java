@@ -1,5 +1,8 @@
 package com.example.Spring_API.api.model;
 
+
+import com.fasterxml.jackson.annotation.JsonGetter;
+
 public class User {
 
     private int id;
