@@ -11,7 +11,7 @@ public class UserValidator implements ConstraintValidator<ValidUser, User> {
         boolean valid = true;
 
         // Check age
-        if (user.getAge() <= 0 || user.getAge() > 999) {
+        if (user.getAge() <= 0 || user.getAge() > 99) {
             context.buildConstraintViolationWithTemplate("Age must be between 1 and 999")
                     .addPropertyNode("age")
                     .addConstraintViolation();

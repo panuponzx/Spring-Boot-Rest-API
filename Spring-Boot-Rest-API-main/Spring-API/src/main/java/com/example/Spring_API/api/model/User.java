@@ -18,7 +18,7 @@ public class User {
     private String name;
 
     @Min(value = 0, message = "Age must be at least 0")
-    @Max(value = 100, message = "Age must be at most 100")
+    @Max(value = 100, message = "Age must be at most 0")
     @Column(name = "age")
     private int age;
 
